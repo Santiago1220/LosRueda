@@ -1,0 +1,64 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #202020;
+}
+
+a{
+    cursor: pointer;
+}
+
+.carta{
+    display: flex;
+    justify-content: center;
+}
+
+.carta img{
+    width: 1000px;
+    -webkit-box-shadow: 2px 7px 16px 1px rgba(0,0,0,0.34);
+    -moz-box-shadow: 2px 7px 16px 1px rgba(0,0,0,0.34);
+    box-shadow: 2px 7px 16px 1px rgba(0,0,0,0.34);
+}
+
+.carta-mobile{
+    display: none;
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 35px;
+    right: 25%;
+}
+
+.whatsapp a{
+    text-decoration: none;
+    color: #3a9b4e;
+    background: white;
+    padding: 15px 20px 15px 10px;
+    border-radius: 8px;
+}
+
+.whatsapp a:hover{
+    text-decoration: underline;
+}
+
+.whatsapp a img{
+    width: 32px;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 576px){
+    .carta-desktop{
+        display: none;
+    }
+    .carta-mobile{
+        display: block;
+    }
+
+    .carta img{
+        width: 400px;
+    }
+    .whatsapp{
+        bottom: 10px;
+    }
+}
